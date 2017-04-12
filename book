@@ -1,0 +1,134 @@
+
+p!
+3.关于enum
+
+2017.2.22
+
+1.写wechat包括redis-object/enum
+2.pundit用于权限认证
+3.rescue from ActiveRecord::RecordInvalid => error
+
+2017.2.23
+
+1.如何正确的使用enum给model attributes属性分类。
+
+2.什么是rest-client
+
+3.使用Concerns
+
+2017.2.24
+
+1.ruby中的dig方法（还不是很明白）
+2.redis中的五个类型(string,list,set,hash,sortedset)
+3.粗略了解csv(roo/gem)
+4.codeschool教程关于serializer/concerns
+
+2017.2.26
+
+1.12web教程
+2.使用paperclip和simple_for/上传图片
+3.使用一个新的gem/cocoon/ haml 写页面。
+4. devise使用
+
+
+
+2017.2.25
+
+1.codeschool两个缓存(Etags, Dalli)
+headers['Etag'] = Digest::MD5.hexdigest(body)
+(stale?/fresh_when)
+2.12 web apps in 12 weeks(blog)
+
+
+
+2017.2.26
+
+1.paperclip/simple_form
+2.haml
+
+2017.2.27
+
+1.gem masonry-rails/acts_as_votable
+2.解决关于server is already running. Check C:/Rails/tmp/pids/server.pid [closed]
+
+2017.2.28
+
+1.12 web 
+
+2.jequry-raty(评论指数）
+
+3.面试(路由不熟悉）
+
+
+2017.3.1
+
+1.手写路由熟悉
+
+2.怎样实现category点击分类
+
+= link_to category.name, xx_path(category: category.name)
+
+
+2017.3.2
+
+1.手动写登录注册功能
+
+2. 用户的权限
+
+3 12 web
+
+
+2017.3.3
+
+1.继续完成未完成功能，
+
+2. error.save(validate: false)
+
+3.理解current_user和correct_user区别
+
+4.def right_user
+   @user == current_user
+    end
+
+	2017.3.6
+
+	1.实现用户的评论和权限
+
+	2.自己感觉太笨了（怎么办？没有捷径可走）
+
+	3.基础很重要
+
+	2017.3.7
+
+	1.添加搜索，分页功能
+
+	2.解决No Ransack::Search object was provided to search_form_for
+	   def set_search
+	       @q = classname.search.params[:@q]
+		     before_action :set_search
+
+			 3. undefind total_pages kaminari
+			 	page.(params[:page])
+
+				2017.3.23
+
+				1.修改国外服务器时间 tzselect/.bash_profile
+
+				2. 从启 /etc/init.d/cron stop/start
+
+				3. a foreign key constraint fails (`wiki`.`comments）dependent: :destroy
+
+				2017.4.10
+
+				1.学习关于Array api/ObjectBasic/
+				2.怎样打开一个gem/gem unpack "xxx"
+				3.markdown的使用/redcarpet/rouge.
+
+				2017.4.10
+				升级http->https
+				1.sudo nginx -t/reload -b 配置/从载。
+				2.vim 命令 $(移动行尾) w(移动下一个词), b(移动到上一个词)
+				gg(跳到第一行), G(跳到最后一行)
+				3.使用config.force_ssl = true
+				4. 配置nginx.site-enabled/default
+				5.source ~./.bashrc/. .bashrc 区别
