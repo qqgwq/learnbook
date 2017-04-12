@@ -132,3 +132,4 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				3.使用config.force_ssl = true
 				4. 配置nginx.site-enabled/default
 				5.source ~./.bashrc/. .bashrc 区别
+				6.git push 失败 failed to push some refs to git(github中的README.md文件不在本地代码目录中, git pull --rebase origin master)
