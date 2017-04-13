@@ -137,3 +137,9 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				2017.4.11
 				1.创建响应式页面
 				2.twitter-bootstrap-rails
+				
+				2017.4.12
+				1.过滤敏感的信息 config.filter_logging += [:password, :password_confirmation]
+				2.%button{ type="button", class: "close", 'data-dismiss' => "alert" } &times
+				3.content_tag 用法，content_tag :div, xxx(value), :id => "xxx"(key)
+				4.what's with_scope?(还不是很明白)
