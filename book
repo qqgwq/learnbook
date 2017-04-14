@@ -143,3 +143,9 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				2.%button{ type="button", class: "close", 'data-dismiss' => "alert" } &times
 				3.content_tag 用法，content_tag :div, xxx(value), :id => "xxx"(key)
 				4.what's with_scope?(还不是很明白)
+
+				2017.4.14
+				1.stack trace(堆栈跟踪)
+				2.模糊查询like
+				3.Address already in use - bind(2) (Errno::EADDRINUSE)( lsof -wni tcp:3000 , kill -9 pid)
+				4.pluralize(xxx, 'xx')
