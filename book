@@ -149,3 +149,11 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				2.模糊查询like
 				3.Address already in use - bind(2) (Errno::EADDRINUSE)( lsof -wni tcp:3000 , kill -9 pid)
 				4.pluralize(xxx, 'xx')
+
+				2017.4.15
+				1.group_by/in_groups_for方法
+
+				2017.4.16
+				1.errors.add(attributes, message)
+			    2.time.format(:long/db...)/strftime
+				3.define_method(:xxx)
