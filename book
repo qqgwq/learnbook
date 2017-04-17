@@ -157,3 +157,13 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				1.errors.add(attributes, message)
 			    2.time.format(:long/db...)/strftime
 				3.define_method(:xxx)
+
+
+				时刻保持一颗用于学习的心，然后你需要：
+
+				分清事情重要或不重要，紧急或不紧急；
+				适当的时候要学会“拒绝”需求，或推迟；
+				不要顺着需求方的需求、思路来解决问题，要跳出来看；
+				尝试用简单的方式解决问题；
+				整理自己的一套最佳实践，反复应用、验证、并改进；
+				参考、借鉴、学习他人的实践方式；
