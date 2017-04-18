@@ -174,3 +174,9 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				2.flash message %button{class: "close", 'aria-label' => "Close", 'data-dismiss' => "alert"} &times
 				3.评论的ajax/create/destroy(节点）
 				4.capture获取对象，可以在任何视图使用
+				
+				2017.4.17
+
+				1.is_a?/kind_of?/instance_of?/区别 instance_of?没有子类
+				2.清空评论框的内容，val(''), 删除评论可以查找id
+				3. render partial: "xxx", collection: "xxx", :as => :xxx,(collection相当是集合， :as => "变量"
