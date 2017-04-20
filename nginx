@@ -3,3 +3,37 @@ nginx: [emerg] "upstream" directive is not allowed here in /etc/nginx/nginx.conf
 部署后会生成current 配置shared/database.yml/secrets.yml
 同一台服务器可以部署多个ip地址： 新建一个xxx.com.conf在nginx/sites-enabled下,使用include放在nginx.conf下 或者直接在conf.d下新建xxx.conf
 mkdir nginx/accessor.log/error.log
+
+sites-enabled:
+
+upstream gwq {
+        server unix:///home/gwq/wiki/shared/tmp/sockets/puma.sock fail_timeout=0;
+		}
+		server {
+		        listen 80 default;
+				        server_name g-wq.com;
+						        root /home/gwq/wiki/current/public;
+
+								        location ^~ /assets/ {
+										                gzip_static on;
+														                expires max;
+																		                add_header Cache-Control public;
+																						        }
+
+																								        try_files $uri/index.html $uri @gwq;
+
+																										        location @gwq {
+																												                proxy_set_header X-Real-IP $remote_addr;
+																																                proxy_set_header Host $host;
+																																				                proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+																																								                client_max_body_size 10m;
+
+																																												                proxy_pass http://gwq;
+																																																        }
+
+																																																		        error_page 500 404.html;
+																																																				        client_max_body_size 10m;
+																																																						        keepalive_timeout 10;
+
+																																																								}
+
