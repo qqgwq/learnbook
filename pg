@@ -1,0 +1,7 @@
+pg修改权限 ALTER USER username WITH SUPERUSER/createrole;
+pg常用命令，/du,/l,/c/d ...
+Could not get lock /var/lib/apt/lists/lock - open (11: Resource temporarily unavailable)
+解决方法：输入以下命令
+sudo rm /var/cache/apt/archives/lock
+sudo rm /var/lib/dpkg/lock
+之后再安装想装的包，即可解决
