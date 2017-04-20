@@ -1,0 +1,5 @@
+upstream放错位置了，应该放在http模块里面但必须在server模块外面：
+nginx: [emerg] "upstream" directive is not allowed here in /etc/nginx/nginx.conf
+部署后会生成current 配置shared/database.yml/secrets.yml
+同一台服务器可以部署多个ip地址： 新建一个xxx.com.conf在nginx/sites-enabled下,使用include放在nginx.conf下 或者直接在conf.d下新建xxx.conf
+mkdir nginx/accessor.log/error.log
