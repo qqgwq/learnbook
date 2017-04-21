@@ -181,3 +181,8 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				2.清空评论框的内容，val(''), 删除评论可以查找id
 				3. render partial: "xxx", collection: "xxx", :as => :xxx,(collection相当是集合， :as => "变量"
 				4.Mysql2::Error - Incorrect string value/rake db:drop/create/migrate
+
+				2017.4.21
+				1.爲甚在生產服務器上不能跑定时任务？首先检查sidekiq和redis, 然后就是本地的环境配置是否正确。
+				2.查看源码 gem unpack packge
+				3.update_all
