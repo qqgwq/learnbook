@@ -186,3 +186,8 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				1.爲甚在生產服務器上不能跑定时任务？首先检查sidekiq和redis, 然后就是本地的环境配置是否正确。
 				2.查看源码 gem unpack packge
 				3.update_all
+				4.user_id/category_id赋值  @user.category = @xxx
+
+				2017.4.24
+				1.git stage常用命令/list/apply
+				2.modal
