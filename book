@@ -196,3 +196,9 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				1.Couldn't find template for digesting(缓存问题)
 				2.link_to_function
 				3.insert_html
+
+				2017.4.26
+				1.Rails::Observers gem
+				2.undefind load_paths /ActiveSupport::Dependencies.autoload_paths << "#{RAILS_ROOT}/app/widgets"/ Rails.root(5.0.0)
+				3.write rss.builder
+				4.pdf-writer/prawn
