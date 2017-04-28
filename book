@@ -204,3 +204,11 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				4.pdf-writer/prawn
 				5.Rails.root + "file"/.join "file"
 				6.make_resourceful(action)
+
+				2017.4.27
+				1.ncdu/sudo apt-get remove/clean
+				2.docker使用/容器，镜像，仓库
+
+				2017.4.28
+				1.use exception_logger gem
+				
