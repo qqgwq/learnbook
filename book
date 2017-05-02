@@ -212,3 +212,8 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				2017.4.28
 				1.use exception_logger gem
 				
+			    2017.5.2
+				1. grape API/mount api下/xxx/xxx
+				2.请求路径，api/resource/get
+				3.changed?/changes/
+
