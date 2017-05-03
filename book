@@ -216,4 +216,8 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				1. grape API/mount api下/xxx/xxx
 				2.请求路径，api/resource/get
 				3.changed?/changes/
-
+                
+				2017.5.3
+				1.把时间转化成年.year/month/day
+				2.浮点数转化成time Time.at(xx)
+				3.添加favicon.ico'
