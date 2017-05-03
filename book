@@ -221,3 +221,4 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				1.把时间转化成年.year/month/day
 				2.浮点数转化成time Time.at(xx)
 				3.添加favicon.ico'
+				4.%td= time_ago_in_words(quote.created_at) + " ago"
