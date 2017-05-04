@@ -222,3 +222,9 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				2.浮点数转化成time Time.at(xx)
 				3.添加favicon.ico'
 				4.%td= time_ago_in_words(quote.created_at) + " ago"
+
+				2017.5.4
+				1.ruby detect方法
+				2.initalize和new使用
+				3.宏的使用attr_reader/writer
+				4.has_and_belongs_to_many
