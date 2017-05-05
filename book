@@ -228,3 +228,9 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				2.initalize和new使用
 				3.宏的使用attr_reader/writer
 				4.has_and_belongs_to_many
+				2017.5.5
+				1.本地数据库的时间格式CST
+				2.使用Time.zone.now查看时区
+				3.rails console call helper time_ago_in_words
+				4.查看mysql时区 show variables like '%time_zone%';
+				5.postgresql show time zone;
