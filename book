@@ -239,3 +239,22 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				1.letter_opener
 				2.电商网站(cart_item, order_item/包含商品的id/user/order的id
 				3.paperclip裁剪使用#时，paperclip是完全按照指定的大小来切割图片,使用>时，paperclip则是直接将图片按比例缩小
+
+				2017.5.9
+				1.undefined local variable or method `ru_captcha'(升级)
+				2.Unmet dependencies no packages Unmet dependencies解决方法删除mysql
+
+				Try with
+
+				sudo dpkg -l | grep mysql 
+				It will list the packages belonging to the mysql.
+
+				Then try the following command 
+
+				sudo apt-get --purge autoremove mysql*
+				sudo apt-get autoclean 
+				After that
+
+				sudo rm -r /var/lib/mysql
+				sudo rm -r /etc/mysql
+				After the above steps try installing mysql again
