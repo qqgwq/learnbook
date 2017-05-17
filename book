@@ -258,3 +258,16 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				sudo rm -r /var/lib/mysql
 				sudo rm -r /etc/mysql
 				After the above steps try installing mysql again
+
+
+				2017.5.16
+				1.获取用户名
+				def display_name
+				  self.email.split("@").first
+				end
+
+				2. 获取作者名
+				def	author_name
+				 user.try(:display_name) || "Nobody"
+
+			   
