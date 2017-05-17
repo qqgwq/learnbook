@@ -270,4 +270,12 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				def	author_name
 				 user.try(:display_name) || "Nobody"
 
-			   
+			  3. 删除评论用户
+			  	def can_delete_by?(u)
+				(self.user == u ) || (u.is_admin?)
+				end
+			 
+			 4. 管理员
+			 	def is_admin?
+				 self.role == "admin"
+				 end
