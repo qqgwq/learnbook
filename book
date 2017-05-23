@@ -279,3 +279,17 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 			 	def is_admin?
 				 self.role == "admin"
 				 end
+			2017.5.22
+
+			1. fields_for(record_name, record_object = nil, options = {}, &block)
+			2. accepts_nested_attributes_for(*attr_names)
+			3. uninitialized constant(模型或controller）
+
+			2017.5.22
+
+			1.strip(用于去掉string 中的空格)
+			2.tagging/tag/关联
+			3. def tag_list
+				self.tags.map { |t| t.name }.join(",")
+		    4. include_blank: true/汉字
+			5.friendly_id
