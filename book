@@ -293,3 +293,6 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 				self.tags.map { |t| t.name }.join(",")
 		    4. include_blank: true/汉字
 			5.friendly_id
+			6.select2-rails(當輸入文字時可以自動搜尋包含輸入文字的標籤。
+			當輸入不存在的標籤時，可以在文章儲存時自動新增標籤)
+			7. gem "gon"
