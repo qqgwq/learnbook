@@ -296,3 +296,8 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 			6.select2-rails(當輸入文字時可以自動搜尋包含輸入文字的標籤。
 			當輸入不存在的標籤時，可以在文章儲存時自動新增標籤)
 			7. gem "gon"
+			8.调用私有方法obj.send(:method [, args...])
+
+			2017.5.23
+			1.一个购物车中有多个CartItem, 每个CartItem有product_id, qry so on...(order/orderitem)
+			2.faraday gem
