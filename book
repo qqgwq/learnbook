@@ -301,3 +301,8 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 			2017.5.23
 			1.一个购物车中有多个CartItem, 每个CartItem有product_id, qry so on...(order/orderitem)
 			2.faraday gem
+			3. freeze冻结常量，不能在赋值，raise: Runtime.error
+			4. fetch 获取hash的值h.fetch("a")
+			5. to_sym convert ;
+			6. "slice" return a containing hash key, hash.slice(key)
+			7. data: { disable_with: "...." }
