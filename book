@@ -306,3 +306,11 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 			5. to_sym convert ;
 			6. "slice" return a containing hash key, hash.slice(key)
 			7. data: { disable_with: "...." }
+
+
+			2017.5.26
+			1.public/private/protected区别(private只能(self)隐式调用/protected可以显示调或隐式调用接(self)
+			2.include/prepend区别(xxx越往后就越靠前),(include中的module在类前面，prepend中的module在类的后面，左 -> 右)
+			3.block可以访问外部的局部变量，block内部的局部变量不能在外部访问
+			4. aasm AASM - State machines for Ruby classes 
+			5. 定义支付方式(添加payment_method and paid_at to order/ 路由/ controller/ model(update_column)
