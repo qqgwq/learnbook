@@ -314,3 +314,12 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 			3.block可以访问外部的局部变量，block内部的局部变量不能在外部访问
 			4. aasm AASM - State machines for Ruby classes 
 			5. 定义支付方式(添加payment_method and paid_at to order/ 路由/ controller/ model(update_column)
+
+		   2017.5.27
+		   1.rails-emoji 不支持utf8，因为是3个字节，而emoji是四个字节所以转化编码.
+		   2.ALTER TABLE `table_name` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci, MODIFY column_name TEXT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+		   2017.6.2
+		   1.box-shadow:1px 1px 10px 1px #50e6df inset;
+		       transition: padding-left 0.2s linear;
+		   2.开发环境和生产环境引用图片方式不一样(image-url)
