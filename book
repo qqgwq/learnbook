@@ -323,3 +323,7 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 		   1.box-shadow:1px 1px 10px 1px #50e6df inset;
 		       transition: padding-left 0.2s linear;
 		   2.开发环境和生产环境引用图片方式不一样(image-url)
+
+		   2017.6.5
+		   1.（[@xxx, Comment.new])/Comment.new, url: ...
+		   2. upto
