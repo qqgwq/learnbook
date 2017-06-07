@@ -338,3 +338,22 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 
 		  3,omniauth-facebook/wechat 获取id/secret
 
+		2017.6.7
+		1. 序列化Marshal
+		def current_cart
+		 +    @cart
+		  +  end
+		   +
+		    +  def setup_cart
+			 +    if session[:cart]
+			  +      @cart = Marshal::load(session[:cart])
+			   +    else
+			    +      @cart = Cart.new
+				 +    end
+				  +
+				   +    yield
+				    +
+					 +    session[:cart] = Marshal::dump(@cart)
+					  +  end
+		2. delete_if
+
