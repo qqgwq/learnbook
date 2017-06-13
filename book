@@ -357,3 +357,11 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 					  +  end
 		2. delete_if
 
+		2017.6.13
+		1.grape-session gem
+		2, def session
+		    env['rack.session']
+		  end
+		3. use Rack::Session::Cookie
+
+		4. undefined method `read_attribute_for_serialization' (change serializer to each_serializer)
