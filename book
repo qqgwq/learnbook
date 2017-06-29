@@ -373,3 +373,9 @@ headers['Etag'] = Digest::MD5.hexdigest(body)
 		页面渲染时：provide先执行，但找到一个provide之后就不再查找
 
 		content_for 顺序执行，在哪个位置，就等之前的渲染完后才执行。但是要等到所有的content被查找完后一块返回，也就是能查找多个
+
+
+		2017.6.29
+		1.rails-rspec
+		2.shoulda-matchers gem
+		3.测试验证中使用with_message("模型里面的message")
